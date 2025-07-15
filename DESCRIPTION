@@ -1,0 +1,10 @@
+Type: project
+Package: louis_ck_tour
+Version: 1.0.0
+Imports: 
+    gha (>= 0.0.0.9000),
+    httr2,
+    rvest, 
+    tidyverse
+Remotes:  
+    r-lib/gha
