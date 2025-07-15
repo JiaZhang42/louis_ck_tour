@@ -1,5 +1,5 @@
 # LOUIS_CK_TOUR
 
-Louis C.K. is finally giving a show in Hong Kong as part of his "Ridiculous" tour, scheduled on Mar 24, 2026. According to his website, the tickets will be on sale in August 2025, but the exact date is not announced yet.
+Louis C.K., one of my favorite stand-up comedians, is finally performing in Hong Kong as part of his Ridiculous tour, with the show scheduled for March 24, 2026. According to his website, tickets will go on sale sometime in August 2025—but the exact date hasn’t been announced yet.
 
-The goal of `louis_ck_tour` is to check his website periodically and notify me if the sale date is announced. Once it finds an update, it will push a ntfy message to topic `louis_ck_hk_tour`.
+The purpose of louis_ck_tour is to monitor his website regularly and notify me as soon as the ticket sale date is posted. When an update is detected, the program sends a ntfy message to the topic louis_ck_hk_tour.
