@@ -17,11 +17,6 @@ res <- request(api_url) %>%
   pluck('included')
 
 res_tb <- res %>% 
-  map(pluck, 'attributes') %>% 
-  tibble(tb = .) %>% 
-  unnest_wider(tb)
-
-res_tb <- res %>% 
   tibble(tb = .) %>% 
   unnest_wider(tb) %>% 
   unnest_wider(attributes)
