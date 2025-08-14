@@ -22,7 +22,7 @@ res_tb <- res %>%
   unnest_wider(attributes)
 
 saleinfo <- res_tb %>% 
-  filter(`venue-name` == 'Hong Kong') %>% 
+  filter(`formatted-address` == 'Hong Kong') %>% 
   pull(details)
 
 if (length(saleinfo) == 0){
