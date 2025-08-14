@@ -26,7 +26,7 @@ saleinfo <- res_tb %>%
   pull(details)
 
 if (length(saleinfo) == 0){
-  stop("No link found! Did the website or the selector change?")
+  stop("No sale information found! Did the website or the selector change?")
 }
 
 
