@@ -30,7 +30,7 @@ if (length(saleinfo) == 0){
 }
 
 
-if(saleinfo != saleinfo_last){
+if((is.na(saleinfo)&!is.na(saleinfo_last)) | saleinfo != saleinfo_last){
   gha_notice("Sale Info updated. Sending notification.")
   msg <- "Click to see"
   request("https://ntfy.sh/") %>% 
